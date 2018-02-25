@@ -117,12 +117,9 @@ hr.hline {
 
 .header_content .svg-inline--fa {
   background: #f42121;
-  border: none;
   color: white;
-  width: 43px;
-  height: 43px;
   display: block;
-  text-align: center;
+  margin: 0 14px;
 }
 
 .header_content_logo {
@@ -145,5 +142,12 @@ hr.hline {
   height: 43px;
   width: 278px;
   border: 1px solid #cccccc;
-  border-left: 1px solid #fff;
+  border-left: none;
+}
+
+.header_content_search_btnfield_btn {
+  width: 43px;
+  height: 43px;
+  background: #f42121;
+  outline: none;
 }

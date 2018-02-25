@@ -107,12 +107,9 @@ hr.hline {
 	padding: 40px 0;
 	.svg-inline--fa{
 		background: #f42121;
-		border: none;
 		color: white;
-		width: 43px;
-		height: 43px;
 		display: block;
-		text-align: center;
+		margin: 0 14px;
 	}
 	&_logo{
 		display: flex;
@@ -125,16 +122,18 @@ hr.hline {
 			height: 43px;
 			width: 180px;
 			border: 1px solid #cccccc;
-//			border-right: 1px solid #dbdcdc;
 		}
 		&_form{
 			height: 43px;
 			width: 278px;
 			border: 1px solid #cccccc;
-			border-left:1px solid #fff;
+			border-left: none;
 		}
-		button{
-			
+		&_btnfield_btn {
+			width: 43px;
+			height: 43px;
+			background: #f42121;
+			outline: none;
 		}
 		
 	}
