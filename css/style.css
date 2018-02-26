@@ -116,10 +116,12 @@ hr.hline {
 }
 
 .header_content .svg-inline--fa {
-  background: #f42121;
+  background: none;
   color: white;
   display: block;
-  margin: 0 14px;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
 }
 
 .header_content_logo {
@@ -136,6 +138,13 @@ hr.hline {
   height: 43px;
   width: 180px;
   border: 1px solid #cccccc;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+}
+
+.header_content_search input::placeholder {
+  padding-left: 15px;
 }
 
 .header_content_search_form {
@@ -149,5 +158,91 @@ hr.hline {
   width: 43px;
   height: 43px;
   background: #f42121;
-  outline: none;
+  display: inline-block;
+  border: 2px solid #f42121;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+
+.header_content_search_btnfield_btn:hover {
+  background: #101116;
+  border: 2px solid #101116;
+  cursor: pointer;
+}
+
+.header_content_login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content_login .fa-shopping-cart {
+  width: 28px;
+  height: 28px;
+  color: #101116;
+}
+
+.header_content_login .fa-shopping-cart:hover {
+  color: #f42121;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header_content_login .fa-heart {
+  width: 28px;
+  height: 28px;
+  color: #101116;
+  margin-right: 14px;
+}
+
+.header_content_login .fa-heart:hover {
+  color: #f42121;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header_content_login .fa-user {
+  width: 28px;
+  height: 28px;
+  color: #101116;
+  margin-right: 14px;
+}
+
+.header_content_login .fa-user:hover {
+  color: #f42121;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header_navbar {
+  background: #101116;
+}
+
+.header_navbar_list {
+  cursor: pointer;
+}
+
+.header_navbar_list ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_navbar_list ul li {
+  padding: 24px 0;
+}
+
+.header_navbar_list ul li a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: #959595;
+  text-decoration: none;
+}
+
+.header_navbar_list ul li:hover {
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  padding: 23px 0;
 }
