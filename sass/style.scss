@@ -57,6 +57,8 @@ hr.hline {
 		display: flex;
 		justify-content: flex-end;
 		&_style{
+			display: flex;
+			justify-content: flex-end;
 			ul{
 				list-style: none;
 				position: relative;
@@ -130,6 +132,9 @@ hr.hline {
 		}
 		input::placeholder {
 			padding-left: 15px;
+			font-family: "Ubuntu", sans-serif;
+			font-size: 14px;
+			color: $color-gray1;
 		}
 		&_form{
 			height: 43px;
@@ -196,26 +201,113 @@ hr.hline {
 .header_navbar{
 	background: $color-general;
 	&_list{
-		cursor: pointer;
-		ul{
-			display: flex;
-			justify-content: space-between;
-			li{
-				padding: 24px 0;
-				a{
-					font-family: "Ubuntu", sans-serif;
-					font-size: 16px;
-					color: $color-gray1;
-					text-decoration: none;
+		display: flex;
+		justify-content:center;
+		ul {
+			position: relative;
+			z-index: 597;
+			li {
+				float: left;
+				min-height: 1px;
+				vertical-align: middle;
+				&.hover, &:hover {
+					position: relative;
+					z-index: 599;
+					cursor: default;
 				}
 			}
-			li:hover{
-				color:$color-white;
-				border-top: 2px solid $color-white;
-				padding: 23px 0;
+			ul {
+				visibility: hidden;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 598;
+				li {
+					float: none;
+				}
+				ul {
+					top: 0;
+					left: auto;
+					right: -99.5%;
+				}
 			}
+			li:hover > ul {
+				visibility: visible;
+			}
+			ul {
+				bottom: 0;
+				left: 0;
+				margin-top: 0;
+				li {
+					font-weight: normal;
+				}
+			}
+		}
+		a {
+			font-family: "Ubuntu", sans-serif;
+			font-size: 14px;
+			color: $color-gray1;
+			text-decoration: none;
+			background: $color-general;
+			display: block;
+		}
+		a {
+			background: $color-general;
+			color: $color-gray1;
+			padding: 0 20px;
+			&:hover {
+				color: $color-white;
+			}
+		}
+		ul {
+			ul {
+				text-transform: none;
+				min-width: 190px;
+				a {
+					background: $color-general;
+					color: $color-gray1;
+					border-top: 0 none;
+					line-height: 150%;
+					padding: 7px 20px;
+				}
+				ul {
+					border-top: 0 none;
+				}
+				li {
+					position: relative;
+					&:hover > a {
+						color: $color-red;
+					}
+				}
+			}
+		}
+		> ul > li > a {
+			line-height: 58px;
+			border-top: 2px solid $color-general;
+			border-bottom: 2px solid $color-general;
+			&:hover {
+				border-top: 2px solid $color-white;
+			}
+		}
+		ul ul li.has-sub > a:after {
+			content: '›';
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			margin-top: -8px;
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

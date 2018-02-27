@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(reset.css);
 @import url(my.css);
 .container {
@@ -50,6 +51,11 @@ hr.hline {
 }
 
 .header_info_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_info_right_style {
   display: flex;
   justify-content: flex-end;
 }
@@ -145,6 +151,9 @@ hr.hline {
 
 .header_content_search input::placeholder {
   padding-left: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
 }
 
 .header_content_search_form {
@@ -222,27 +231,117 @@ hr.hline {
 }
 
 .header_navbar_list {
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .header_navbar_list ul {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  z-index: 597;
 }
 
 .header_navbar_list ul li {
-  padding: 24px 0;
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
 }
 
-.header_navbar_list ul li a {
+.header_navbar_list ul li.hover, .header_navbar_list ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+.header_navbar_list ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+}
+
+.header_navbar_list ul ul li {
+  float: none;
+}
+
+.header_navbar_list ul ul ul {
+  top: 0;
+  left: auto;
+  right: -99.5%;
+}
+
+.header_navbar_list ul li:hover > ul {
+  visibility: visible;
+}
+
+.header_navbar_list ul ul {
+  bottom: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+.header_navbar_list ul ul li {
+  font-weight: normal;
+}
+
+.header_navbar_list a {
   font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #959595;
   text-decoration: none;
+  background: #101116;
+  display: block;
 }
 
-.header_navbar_list ul li:hover {
+.header_navbar_list a {
+  background: #101116;
+  color: #959595;
+  padding: 0 20px;
+}
+
+.header_navbar_list a:hover {
   color: #ffffff;
+}
+
+.header_navbar_list ul ul {
+  text-transform: none;
+  min-width: 190px;
+}
+
+.header_navbar_list ul ul a {
+  background: #101116;
+  color: #959595;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 7px 20px;
+}
+
+.header_navbar_list ul ul ul {
+  border-top: 0 none;
+}
+
+.header_navbar_list ul ul li {
+  position: relative;
+}
+
+.header_navbar_list ul ul li:hover > a {
+  color: #f42121;
+}
+
+.header_navbar_list > ul > li > a {
+  line-height: 58px;
+  border-top: 2px solid #101116;
+  border-bottom: 2px solid #101116;
+}
+
+.header_navbar_list > ul > li > a:hover {
   border-top: 2px solid #ffffff;
-  padding: 23px 0;
+}
+
+.header_navbar_list ul ul li.has-sub > a:after {
+  content: '›';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
 }
