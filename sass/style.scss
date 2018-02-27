@@ -312,25 +312,42 @@ hr.hline {
 	}
 }
 .header_banner{
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-//	position: fixed; 
 	&_cover{
-		.photo{
+		&_photo{
 			background: url(https://ld-prestashop.template-help.com/prestashop_63625/modules/tmhtmlcontent/img/6e0e96d52c1b0d351e8e21a760b9de833b5c2c30_top-banner.jpg);
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
+			&_text{
+				padding: 7.4% 50px 28.1%;
+				font: 700 34px "Rubik",sans-serif;
+				font-size: 57px;
+				line-height: 1.2;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				margin: 0;
+				color: $color-white;
+				text-align: center;
+				&_text2{
+					display: inline-block;
+					font:16px "Rubik",sans-serif;
+					background: rgba(244,33,33,0.5);
+					font-size: 24px;
+					padding: 11px 28px;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+					margin: 0;
+					padding: 10px 20px;
+					margin-top: 26px;
+				}
+			}
 		}
 		.row {
 			height: 600px;
 		}
 	}
 }
-
 
 
 
