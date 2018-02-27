@@ -83,6 +83,7 @@ hr.hline {
 				display:block;
 			}
 			ul li span:hover{
+				cursor: pointer;
 				color: $color-red;
 				-webkit-transition: all .2s ease-in-out;
 				-moz-transition: all .2s ease-in-out;
@@ -171,6 +172,7 @@ hr.hline {
 			-webkit-transition: all .3s ease-in-out;
 			-moz-transition: all .3s ease-in-out;
 			transition: all .3s ease-in-out;
+			cursor: pointer;
 		}
 		.fa-heart{
 			width: 28px;
@@ -183,6 +185,7 @@ hr.hline {
 			-webkit-transition: all .3s ease-in-out;
 			-moz-transition: all .3s ease-in-out;
 			transition: all .3s ease-in-out;
+			cursor: pointer;
 		}
 		.fa-user{
 			width: 28px;
@@ -195,6 +198,7 @@ hr.hline {
 			-webkit-transition: all .3s ease-in-out;
 			-moz-transition: all .3s ease-in-out;
 			transition: all .3s ease-in-out;
+			cursor: pointer;
 		}
 	}
 }
@@ -257,6 +261,9 @@ hr.hline {
 			padding: 0 20px;
 			&:hover {
 				color: $color-white;
+				-webkit-transition: all .3s ease-in-out;
+				-moz-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
 			}
 		}
 		ul {
@@ -264,7 +271,7 @@ hr.hline {
 				text-transform: none;
 				min-width: 190px;
 				a {
-					background: $color-general;
+					background: $color-white;
 					color: $color-gray1;
 					border-top: 0 none;
 					line-height: 150%;
@@ -277,6 +284,9 @@ hr.hline {
 					position: relative;
 					&:hover > a {
 						color: $color-red;
+						-webkit-transition: all .3s ease-in-out;
+						-moz-transition: all .3s ease-in-out;
+						transition: all .3s ease-in-out;
 					}
 				}
 			}
@@ -287,6 +297,9 @@ hr.hline {
 			border-bottom: 2px solid $color-general;
 			&:hover {
 				border-top: 2px solid $color-white;
+				-webkit-transition: all .3s ease-in-out;
+				-moz-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
 			}
 		}
 		ul ul li.has-sub > a:after {
@@ -298,6 +311,26 @@ hr.hline {
 		}
 	}
 }
+.header_banner{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+//	position: fixed; 
+	&_cover{
+		.photo{
+			background: url(https://ld-prestashop.template-help.com/prestashop_63625/modules/tmhtmlcontent/img/6e0e96d52c1b0d351e8e21a760b9de833b5c2c30_top-banner.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row {
+			height: 600px;
+		}
+	}
+}
+
 
 
 

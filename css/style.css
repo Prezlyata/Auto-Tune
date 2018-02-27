@@ -91,6 +91,7 @@ hr.hline {
 }
 
 .header_info_right_style ul li span:hover {
+  cursor: pointer;
   color: #f42121;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -196,6 +197,7 @@ hr.hline {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 
 .header_content_login .fa-heart {
@@ -210,6 +212,7 @@ hr.hline {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 
 .header_content_login .fa-user {
@@ -224,6 +227,7 @@ hr.hline {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 
 .header_navbar {
@@ -301,6 +305,9 @@ hr.hline {
 
 .header_navbar_list a:hover {
   color: #ffffff;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header_navbar_list ul ul {
@@ -309,7 +316,7 @@ hr.hline {
 }
 
 .header_navbar_list ul ul a {
-  background: #101116;
+  background: #ffffff;
   color: #959595;
   border-top: 0 none;
   line-height: 150%;
@@ -326,6 +333,9 @@ hr.hline {
 
 .header_navbar_list ul ul li:hover > a {
   color: #f42121;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header_navbar_list > ul > li > a {
@@ -336,6 +346,9 @@ hr.hline {
 
 .header_navbar_list > ul > li > a:hover {
   border-top: 2px solid #ffffff;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header_navbar_list ul ul li.has-sub > a:after {
@@ -344,4 +357,23 @@ hr.hline {
   top: 50%;
   right: 15px;
   margin-top: -8px;
+}
+
+.header_banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header_banner_cover .photo {
+  background: url(https://ld-prestashop.template-help.com/prestashop_63625/modules/tmhtmlcontent/img/6e0e96d52c1b0d351e8e21a760b9de833b5c2c30_top-banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header_banner_cover .row {
+  height: 600px;
 }
