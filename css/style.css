@@ -393,5 +393,125 @@ hr.hline {
 }
 
 .header_banner_cover .row {
-  height: 600px;
+  height: 362px;
+}
+
+.header_filter_content {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  padding: 58px 64px 88px 64px;
+}
+
+.header_filter_content_description {
+  font: 300 24px "Rubik",sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 34px;
+  margin-right: 78px;
+}
+
+.header_filter_content_description h3::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-top: 2px solid #f42121;
+  width: 78px;
+  margin-right: 18px;
+  margin-top: 20px;
+}
+
+.header_filter_content_description stong {
+  font-weight: 500;
+  padding-left: 78px;
+}
+
+.header_filter_content_top {
+  display: flex;
+  padding-top: 44px;
+  padding-bottom: 20px;
+}
+
+.header_filter_content_top .radio {
+  margin-right: 33px;
+}
+
+.header_filter_content_top .radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.header_filter_content_top .radio input[type="radio"] + .radio_label:before {
+  content: '';
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #959595;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+
+.header_filter_content_top .radio input[type="radio"]:checked + .radio_label:before {
+  background-color: #f42121;
+  border: 1px solid #f42121;
+  box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.header_filter_content_top .radio_label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+  cursor: pointer;
+}
+
+.header_filter_content_top_text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #101116;
+  margin-right: 23px;
+  margin-left: 90px;
+}
+
+.header_filter_content_search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_filter_content_search_filter {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.header_filter_content_search_filter_top {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_filter_content_search_filter_top_left {
+  width: 30%;
+}
+
+.header_filter_content_search_filter_top_right {
+  width: 70%;
+}
+
+.header_filter_content_search_filter_down {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_filter_content_search_filter_down_left {
+  width: 30%;
+}
+
+.header_filter_content_search_filter_down_right {
+  width: 70%;
 }
