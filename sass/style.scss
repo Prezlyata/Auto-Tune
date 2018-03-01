@@ -354,7 +354,7 @@ hr.hline {
 		display: flex;
 		flex-direction: column;
 //		flex-wrap: wrap;
-		background: blue;
+		background: $color-white;
 //		position: absolute;
 //		margin-top: -259px;
 //		max-width: 1274px;
@@ -439,87 +439,124 @@ hr.hline {
 				display: flex;
 				flex-direction: column;
 				width: 30%;
+				flex-wrap: wrap;
 				&_top{
 					display: flex;
 					flex-direction: row;
+					padding-top: 8px;
 					&_left {
-						width: 30%
+						width: 30%;
+						display: flex;
+						align-items: center;
+						justify-content: flex-end;
+						p{
+							font-family: "Ubuntu", sans-serif;
+							font-size: 14px;
+							color: $color-general;
+							padding-right: 24px;
+						}
 					}
 					&_right{
-						width: 70%;
-						
-						section {
+						width: 70%;	
+						select{
 							width: 100%;
+							height: 43px;
+							border: 1px solid #cccccc;
+							font-family: "Ubuntu", sans-serif;
+							font-size: 14px;
+							color: $color-gray1;
 						}
 					}
 				}
 				&_down{
 					display: flex;
 					flex-direction: row;
+					padding-top: 8px;
 					&_left {
-						width: 30%
+						display: flex;
+						align-items: center;
+						justify-content: flex-end;
+						width: 30%;
+						p{
+							font-family: "Ubuntu", sans-serif;
+							font-size: 14px;
+							color: $color-general;
+							float: right;
+							padding-right: 24px;
+						}	
 					}
 					&_right{
 						width: 70%;
-						
-						section {
+						select {
 							width: 100%;
+							height: 43px;
+							font-family: "Ubuntu", sans-serif;
+							font-size: 14px;
+							color: $color-gray1;
+							}
+						&_price{
+							display: flex;
+							justify-content: space-between;
+							input{
+								width: 49%;
+								height: 43px;
+								border: 1px solid #cccccc;
+								font-family: "Ubuntu", sans-serif;
+								font-size: 14px;
+								color: $color-gray1;
+								text-align: center;
+							}
+							input::placeholder {
+								text-align: center;
+							}
 						}
+						}
+					}
+				&_btn{
+					display: flex;
+					justify-content: flex-end;
+					padding-top: 30px;
+					padding-bottom: 90px;
+					.close:hover,
+					.close:focus {
+						box-shadow: 
+							inset -3.5em 0 0 0 var(--hover),
+							inset 3.5em 0 0 0 var(--hover);  
+						}
+					$colors: (
+						close: #fff, 
+					);
+					@each $button, $color in $colors {
+						.#{$button} {
+							--color: #{$color};
+							--hover: #{adjust-hue($color, 45deg)};
+						}
+					}
+					button {  
+						color: var(--color);
+						transition: 0.25s;
+						&:hover,
+						&:focus { 
+							border-color: var(--hover);
+							color: $color-red;
+							border: 2px solid $color-red;
+							background: $color-white;
+						}
+					}
+					button {
+						background: $color-red;
+						border: 2px solid $color-red;
+						font: inherit;
+						line-height: 1;
+						padding: 1em 2em;
+						cursor: pointer;
+						width: 45%;
+						font-family: "Rubik", sans-serif;
+						font-weight: 500;
 					}
 				}
 			}
-		}
-//		&_center{
-//			display: flex;
-//			justify-content: space-between;
-//			&_1{
-//				display: flex;
-//				flex-direction: column;
-//				label{
-//					display: flex;
-//					justify-content: flex-end;
-//					input{
-//						height: 43px;
-//						width: 100px;
-//						border: 1px solid #cccccc;
-//					}	
-//					input::placeholder {
-//						padding-left: 15px;
-//						font-family: "Ubuntu", sans-serif;
-//						font-size: 14px;
-//						color: $color-gray1;
-//					}
-//				}
-//				.parameter-name{
-//					font-family: "Ubuntu", sans-serif;
-//					font-size: 14px;
-//					color: $color-general;
-//					margin: 0 20px 0 0;
-//					
-//				}
-//				.search{
-//					height: 43px;
-//					width: 255px;
-//					border: 1px solid #cccccc;
-//					font-family: "Ubuntu", sans-serif;
-//					font-size: 14px;
-//					color: $color-gray1;
-////					float: right;
-//				}
-//				.search1{
-//					height: 43px;
-//					width: 100px;
-//					border: 1px solid #cccccc;
-//					font-family: "Ubuntu", sans-serif;
-//					font-size: 14px;
-//					color: $color-gray1;
-//					float: right;
-//				}
-//			}
-//		}	
-		
-		
-		
+		}		
 	}	
 }
 

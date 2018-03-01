@@ -399,7 +399,7 @@ hr.hline {
 .header_filter_content {
   display: flex;
   flex-direction: column;
-  background: blue;
+  background: #ffffff;
   padding: 58px 64px 88px 64px;
 }
 
@@ -488,30 +488,131 @@ hr.hline {
   display: flex;
   flex-direction: column;
   width: 30%;
+  flex-wrap: wrap;
 }
 
 .header_filter_content_search_filter_top {
   display: flex;
   flex-direction: row;
+  padding-top: 8px;
 }
 
 .header_filter_content_search_filter_top_left {
   width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header_filter_content_search_filter_top_left p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #101116;
+  padding-right: 24px;
 }
 
 .header_filter_content_search_filter_top_right {
   width: 70%;
 }
 
+.header_filter_content_search_filter_top_right select {
+  width: 100%;
+  height: 43px;
+  border: 1px solid #cccccc;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+}
+
 .header_filter_content_search_filter_down {
   display: flex;
   flex-direction: row;
+  padding-top: 8px;
 }
 
 .header_filter_content_search_filter_down_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 30%;
+}
+
+.header_filter_content_search_filter_down_left p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #101116;
+  float: right;
+  padding-right: 24px;
 }
 
 .header_filter_content_search_filter_down_right {
   width: 70%;
+}
+
+.header_filter_content_search_filter_down_right select {
+  width: 100%;
+  height: 43px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+}
+
+.header_filter_content_search_filter_down_right_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_filter_content_search_filter_down_right_price input {
+  width: 49%;
+  height: 43px;
+  border: 1px solid #cccccc;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+  text-align: center;
+}
+
+.header_filter_content_search_filter_down_right_price input::placeholder {
+  text-align: center;
+}
+
+.header_filter_content_search_filter_btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+
+.header_filter_content_search_filter_btn .close:hover,
+.header_filter_content_search_filter_btn .close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.header_filter_content_search_filter_btn .close {
+  --color: #fff;
+  --hover: white;
+}
+
+.header_filter_content_search_filter_btn button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+.header_filter_content_search_filter_btn button:hover, .header_filter_content_search_filter_btn button:focus {
+  border-color: var(--hover);
+  color: #f42121;
+  border: 2px solid #f42121;
+  background: #ffffff;
+}
+
+.header_filter_content_search_filter_btn button {
+  background: #f42121;
+  border: 2px solid #f42121;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+  cursor: pointer;
+  width: 45%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
