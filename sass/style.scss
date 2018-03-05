@@ -730,6 +730,56 @@ hr.hline {
 		&_left{
 			max-width: 619px;
 			&_block{
+				.style_text2{
+					color: $color-gray1;
+					
+				}
+				.style_text1{
+					color: $color-red;
+				}
+				&_btn{
+					display: flex;
+					justify-content: flex-start;
+					padding-top: 160px;
+					padding-bottom: 50px;
+					.close:hover,
+					.close:focus {
+						box-shadow: 
+							inset -3.5em 0 0 0 var(--hover),
+							inset 3.5em 0 0 0 var(--hover);  
+					}
+					$colors: (
+						close: #fff, 
+					);
+					@each $button, $color in $colors {
+						.#{$button} {
+							--color: #{$color};
+							--hover: #{adjust-hue($color, 45deg)};
+						}
+					}
+					button {  
+						color: var(--color);
+						transition: 0.25s;
+						&:hover,
+						&:focus { 
+							border-color: var(--hover);
+							color: $color-red;
+							border: 2px solid $color-red;
+							background: $color-white;
+						}
+					}
+					button {
+						background: $color-red;
+						border: 2px solid $color-red;
+						font: inherit;
+						line-height: 1;
+						padding: 1em 2em;
+						cursor: pointer;
+						width: 300px;
+						font-family: "Rubik", sans-serif;
+						font-weight: 500;
+					}
+				}
 ////				.container .parent:hover .child {
 ////					-webkit-transform: scale(1.1);
 ////					transform: scale(1.1);
@@ -774,6 +824,7 @@ hr.hline {
 				}
 				
 				&_info{
+					font: 500 10px/1.2 "Rubik",sans-serif;
 					font-size: 10px;
 					padding: 30px 0 23px 0;
 				}
@@ -835,6 +886,18 @@ hr.hline {
 				width: 295px;
 				padding-bottom: 50px;
 				&_info{
+					font: 500 10px/1.2 "Rubik",sans-serif;
+					font-size: 10px;
+					padding: 30px 0 23px 0;
+				}
+				.style_text2{
+					color: $color-gray1;
+
+				}
+				.style_text1{
+					color: $color-red;
+				}
+				&_info{
 					font-size: 10px;
 					padding: 30px 0 23px 0;
 				}
@@ -884,12 +947,73 @@ hr.hline {
 					-moz-transform:scale(1.1);
 					-ms-transform:scale(1.1);
 					-o-transform:scale(1.1)
+					
 				}
 			}
 		}
 	}
 }
+.background_grey{
+	background-color: #dcdde1;
+}
 
+.subscribe{
+	&_block{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 53px;
+		padding-bottom: 53px;
+		&_left{
+			min-width: 400px;
+			display: flex;
+			align-items:center;
+			.style_text1{
+				font: 500 16px/1.2 "Rubik", sans-serif;
+				letter-spacing: 0.04em;
+				margin: 0 0 5px;
+				text-transform: uppercase;
+				color: #101116;	
+			}
+			.style_text2{
+				font-family: "Ubuntu", sans-serif;
+				font-size: 14px;
+				line-height: 30px;
+				color: $color-gray1;
+				padding-right: 24px;
+				padding-bottom: 20px;
+			}
+		}
+		&_right{
+			min-width: 400px;
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			.svg-inline--fa{
+				background: none;
+				color: white;
+				display: block;
+				margin: 0 auto;
+				width: 20px;
+				height: 20px;
+			}
+			input{
+				width: 100%;
+			}
+			input::placeholder {
+				padding-left: 15px;
+				font-family: "Ubuntu", sans-serif;
+				font-size: 14px;
+				color: $color-gray1;	
+			}
+			&_form{
+				height: 43px;
+				width: 278px;
+				border: 1px solid #cccccc;
+			}
+		}
+	}
+}
 
 
 
