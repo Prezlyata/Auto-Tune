@@ -1048,3 +1048,183 @@ hr.hline {
   width: 278px;
   border: 1px solid #cccccc;
 }
+
+.social {
+  padding-top: 97px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social_block_logo {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 37px;
+}
+
+.social_block_logo img {
+  margin-bottom: 27px;
+}
+
+.social_block_logo p {
+  padding-bottom: 27px;
+}
+
+.social_block_logo p .social_float {
+  margin-right: 11px;
+}
+
+.social_block_logo .social_text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #959595;
+  float: right;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+.social_block_logo .text_address {
+  cursor: pointer;
+  font: 400 16px "Rubik", sans-serif;
+  letter-spacing: 0.04em;
+  color: #101116;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.social_block_logo .text_address:hover {
+  color: #f42121;
+}
+
+.social_block_information {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 37px;
+}
+
+.social_block_information .style_text1 {
+  font: 500 16px/1.2 "Rubik", sans-serif;
+  letter-spacing: 0.04em;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  color: #101116;
+}
+
+.social_block_information .social_block_hover {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+  cursor: pointer;
+  color: #101116;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.social_block_information .social_block_hover:hover {
+  color: #f42121;
+  padding-left: 5px;
+}
+
+.social_block_information p {
+  padding-bottom: 27px;
+}
+
+.social_block_information p .social_float {
+  margin-right: 11px;
+}
+
+.social_block_categories {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 37px;
+}
+
+.social_block_categories .style_text1 {
+  font: 500 16px/1.2 "Rubik", sans-serif;
+  letter-spacing: 0.04em;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  color: #101116;
+}
+
+.social_block_categories .social_block_hover {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+  cursor: pointer;
+  color: #101116;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.social_block_categories .social_block_hover:hover {
+  color: #f42121;
+  padding-left: 5px;
+}
+
+.social_block_categories p {
+  padding-bottom: 27px;
+}
+
+.social_block_categories p .social_float {
+  margin-right: 11px;
+}
+
+.social_block_account {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social_block_account .style_text1 {
+  font: 500 16px/1.2 "Rubik", sans-serif;
+  letter-spacing: 0.04em;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  color: #101116;
+}
+
+.social_block_account .social_block_hover {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #959595;
+  cursor: pointer;
+  color: #101116;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.social_block_account .social_block_hover:hover {
+  color: #f42121;
+  padding-left: 5px;
+}
+
+.social_block_account p {
+  padding-bottom: 27px;
+}
+
+.social_block_account p .social_float {
+  margin-right: 11px;
+}
