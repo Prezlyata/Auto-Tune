@@ -1050,6 +1050,7 @@ hr.hline {
 }
 
 .social {
+  background: #f3f4f8;
   padding-top: 97px;
   display: flex;
   flex-direction: column;
@@ -1067,6 +1068,30 @@ hr.hline {
   display: flex;
   flex-direction: column;
   padding-right: 37px;
+}
+
+.social_block_logo .social_icon {
+  color: #101116;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_block_logo .social_icon .icon_float {
+  color: #f42121;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.social_block_logo .icon_float:hover {
+  color: #101116;
+}
+
+.social_block_logo .icon_float {
+  margin-right: 10px;
 }
 
 .social_block_logo img {
@@ -1227,4 +1252,35 @@ hr.hline {
 
 .social_block_account p .social_float {
   margin-right: 11px;
+}
+
+footer {
+  border-top: 1px solid #dcdde1;
+  background: #f3f4f8;
+}
+
+.footer_box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_box_left {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #959595;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+.footer_box_right {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_box_right_item {
+  padding-left: 30px;
 }
